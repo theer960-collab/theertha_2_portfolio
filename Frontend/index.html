@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Theertha's Portfolio – A passionate developer and student showcasing skills, achievements, and academic journey." />
+  <meta name="keywords" content="Theertha, Portfolio, Developer, Student, Skills, Achievements" />
+  <meta name="author" content="Theertha" />
+  <title>Theertha | Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Theertha<span class="dot">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#attendance" class="nav-link">Attendance</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting">👋 Hello, I'm</p>
+        <h1 class="hero-name">Theertha</h1>
+        <div class="hero-roles">
+          <span class="role-text" id="roleText">Student Developer</span>
+        </div>
+        <p class="hero-bio">
+          Passionate about building elegant digital solutions. I blend creativity with technical skills to craft meaningful experiences.
+        </p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary" id="heroContactBtn">Get In Touch</a>
+          <a href="#about" class="btn btn-outline">About Me</a>
+        </div>
+        <div class="hero-socials">
+          <a href="#" class="social-icon" aria-label="GitHub" id="socialGithub"><i class="fab fa-github"></i></a>
+          <a href="#" class="social-icon" aria-label="LinkedIn" id="socialLinkedin"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon" aria-label="Email" id="socialEmail"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="hero-image-wrap">
+        <div class="hero-image-ring"></div>
+        <div class="hero-avatar" id="heroAvatar" aria-label="TR initials avatar">
+          <span class="hero-avatar-text">TR</span>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator" id="scrollIndicator" aria-label="Scroll down">
+      <div class="scroll-dot"></div>
+    </a>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <div class="about-card-icon">🎓</div>
+          <h3>Education</h3>
+          <p>Currently pursuing a Bachelor's degree in Computer Science, maintaining a strong academic record while actively participating in technical clubs.</p>
+        </div>
+        <div class="about-card reveal">
+          <div class="about-card-icon">💡</div>
+          <h3>Passion</h3>
+          <p>I love turning ideas into reality through code. From web development to data analysis, I'm always excited to learn and build.</p>
+        </div>
+        <div class="about-card reveal">
+          <div class="about-card-icon">🚀</div>
+          <h3>Goals</h3>
+          <p>Aspiring to become a full-stack developer and contribute to impactful open-source projects that make a difference in people's lives.</p>
+        </div>
+      </div>
+      <div class="about-stats reveal">
+        <div class="stat-item">
+          <span class="stat-number" data-target="15">0</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="6">0</span>
+          <span class="stat-label">Certifications</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="3">0</span>
+          <span class="stat-label">Awards</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="85">0</span>
+          <span class="stat-label">Avg Attendance %</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section class="section section-dark" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">My Skills</h2>
+      </div>
+      <div class="skills-grid" id="skillsGrid">
+        <div class="skills-loading">
+          <div class="spinner"></div>
+          <p>Loading skills...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ACHIEVEMENTS SECTION ===== -->
+  <section class="section" id="achievements">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">My Journey</span>
+        <h2 class="section-title">Achievements</h2>
+      </div>
+      <div class="achievements-grid" id="achievementsGrid">
+        <div class="achievements-loading">
+          <div class="spinner"></div>
+          <p>Loading achievements...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ATTENDANCE SECTION ===== -->
+  <section class="section section-dark" id="attendance">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Academic Record</span>
+        <h2 class="section-title">Attendance Tracker</h2>
+        <p class="section-subtitle">Real-time view of subject-wise attendance for the current semester</p>
+      </div>
+      <div class="attendance-wrapper reveal">
+        <div class="attendance-summary" id="attendanceSummary">
+          <div class="att-summary-card">
+            <span class="att-sum-icon">📚</span>
+            <span class="att-sum-value" id="totalSubjects">—</span>
+            <span class="att-sum-label">Subjects</span>
+          </div>
+          <div class="att-summary-card">
+            <span class="att-sum-icon">✅</span>
+            <span class="att-sum-value" id="avgAttendance">—</span>
+            <span class="att-sum-label">Avg. Attendance</span>
+          </div>
+          <div class="att-summary-card">
+            <span class="att-sum-icon">⚠️</span>
+            <span class="att-sum-value" id="lowAttendance">—</span>
+            <span class="att-sum-label">Below 75%</span>
+          </div>
+        </div>
+        <div class="table-container" id="attendanceTableWrap">
+          <div class="attendance-loading">
+            <div class="spinner"></div>
+            <p>Fetching attendance data...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Let's Connect</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Have a question or want to collaborate? Drop me a message!</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-info-card">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Location</h4>
+              <p>Kerala, India</p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <p>theertha@email.com</p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div>
+              <h4>Status</h4>
+              <p>Open to internships &amp; collaborations</p>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="#" class="contact-social-link" id="contactGithub"><i class="fab fa-github"></i></a>
+            <a href="#" class="contact-social-link" id="contactLinkedin"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="contact-social-link" id="contactInstagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contactName">Your Name</label>
+              <input type="text" id="contactName" name="name" placeholder="Theertha" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Email Address</label>
+              <input type="email" id="contactEmail" name="email" placeholder="you@example.com" required autocomplete="email" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contactSubject">Subject</label>
+            <input type="text" id="contactSubject" name="subject" placeholder="What's this about?" required />
+          </div>
+          <div class="form-group">
+            <label for="contactMessage">Message</label>
+            <textarea id="contactMessage" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="contactSubmitBtn">
+            <span class="btn-text">Send Message</span>
+            <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+          </button>
+          <div class="form-status" id="formStatus"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-name">Theertha<span class="dot">.</span></p>
+        <p class="footer-text">Crafted with <span class="heart">❤️</span> and lots of ☕</p>
+        <p class="footer-copy">© 2024 Theertha. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast"></div>
+
+  <!-- Main JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
