@@ -3,7 +3,7 @@
    Handles: Navbar, Animations, API calls, Forms
    ================================================ */
 
-const API_BASE = 'http://localhost:5000/api';
+const API_BASE = 'https://theertha-2-portfolio-backend.onrender.com/api';
 
 // ===== NAVBAR =====
 const navbar = document.getElementById('navbar');
