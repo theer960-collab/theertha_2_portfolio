@@ -91,7 +91,7 @@ const attendanceRecords = [
 
 async function seed() {
   try {
-    await mongoose.connect(MONGO_URI);
+    await mongoose.connect(process.env.MONGO_URI);
     console.log('✅ Connected to MongoDB');
 
     // Clear existing data
