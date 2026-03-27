@@ -11,8 +11,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Serve static frontend files
-app.use(express.static(path.join(__dirname, '../Frontend')));
+app.get("/", (req, res) => {
+  res.send("Backend is running")
+})
 
 // API Routes
 app.use('/api/contact', require('./routes/contact'));
